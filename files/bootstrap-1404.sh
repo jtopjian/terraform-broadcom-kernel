@@ -12,7 +12,7 @@ apt-get build-dep -y linux-image-3.13.0-92-generic
 pushd linux-3.13.0
 cp /root/files/.config .
 cp /usr/src/linux-headers-3.13.0-92-generic/Module.symvers .
-cp /root/files/bnx2.c drivers/net/ethernet/broadcom/
+cp /root/files/bnx2.c.1404 drivers/net/ethernet/broadcom/
 make scripts
 make modules_prepare
 make M=drivers/net/ethernet/broadcom
